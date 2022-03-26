@@ -58,15 +58,15 @@ As a result, higher education schools are beginning to drop the ACT/SAT requirem
 |**pct_math_benchmark**|*float*|SAT|The percent of students who met or exceeded the benchmark for the SAT Math test for Grade 12.
 |**num_test_takers_benchmark**|*float*|SAT|The total number of students who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math Grade 12.| 
 |**pct_test_takers_benchmark**|*float*|SAT|The percent of students who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math Grade 12.| 
-|**year**|*object*|ACT/SAT|The test administration year| 
+|**year**|*object*|ACT/SAT|The test administration year.| 
 
 ### Definitions
 
-**Overall:** All schools with recorded test data
+   * **Overall:** All schools with recorded test data
 
-**Worst-Performing:** Schools where less than 10% of students met or exceeded the benchmark score
+   * **Worst-Performing:** Schools where less than 10% of students met or exceeded the benchmark score
 
-**Benchmark Student:** Students who met or exceeded the benchmark score
+   * **Benchmark Student:** Students who met or exceeded the benchmark score
 
 ---
 
@@ -82,11 +82,11 @@ Between the ACT and SAT datasets, there were 52 distinct districts and there was
 
 ### ACT vs. SAT Performance by Subject
 
-The ACT dataset provided each school's average score by subject, through which the state's average score by subject was determined, and are as follows: Reading(22), English(21), Math(21) and Science(21). The worst-performing schools' averages are: Reading(16), English(14), Math(16) and Science(16).
+The ACT dataset provided each school's average score by subject, through which the state's average score by subject was determined, and are as follows: Reading (22), English (21), Math (21) and Science (21). The worst-performing schools' averages are: Reading (16), English (14), Math (16) and Science (16).
 
 Based on these averages, there is no subject that can be considered worst-performing, either overall or at worst-performing schools.
 
-The SAT dataset provided each school's percent of students who met or exceeded the benchmark, through which the state's average percent of students who met or exceeded the benchmark was determined, and are as follows: Evidence-Based Reading & Writing(68%) and Math(46%). The worst-performing school's averages are: Evidence-Based Reading & Writing (27%) and Math(7%).
+The SAT dataset provided each school's percent of students who met or exceeded the benchmark, through which the state's average percent of students who met or exceeded the benchmark was determined, and are as follows: Evidence-Based Reading & Writing (68%) and Math (46%). The worst-performing school's averages are: Evidence-Based Reading & Writing (27%) and Math (7%).
 
 Based on these averages, Math is the subject that is giving students significant difficulty, both overall and at worst-performing schools.
 
@@ -102,7 +102,7 @@ The ACT does not have a subject that can be considered worst-performing, but the
 
 ### Recommendations
 
-With 52 worst-performing districts (as defined in this analysis), the State of California has some significant academic improvements to consider. To start, focusing on the districts in the top 3 counties with the most amount of worst-performing districts (Los Angeles, Fresno and Riverside), will make the highest impact as they make up 44.23% of the worst-performing districts. These counties/districts will require a higher quality of instruction and delivery style with an emphasis on Math.
+With 52 worst-performing districts, the State of California has some significant academic improvements to consider. To start, focusing on the districts in the top 3 counties with the most amount of worst-performing districts (Los Angeles, Fresno and Riverside), will have the highest impact as they make up 44.23% of the worst-performing districts. These counties/districts will require a higher quality of instruction and delivery style with an emphasis on Math.
 
 ### Next Steps
 

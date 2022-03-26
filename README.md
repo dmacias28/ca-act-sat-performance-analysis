@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 1: The State of California: ACT & SAT Performance Analysis
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 1: The State of California - ACT & SAT Performance Analysis
 
 ---
 
@@ -62,20 +62,17 @@ As a result, higher education schools are beginning to drop the ACT/SAT requirem
 
 ### Definitions
 
-**Overall:**
-   * All schools with recorded test data
+**Overall:** All schools with recorded test data
 
-**Worst-Performing:**
-   * Schools where less than 10% of students met or exceeded the benchmark score
+**Worst-Performing:** Schools where less than 10% of students met or exceeded the benchmark score
 
-**Benchmark Student:**
-   * Students who met or exceeded the benchmark score
+**Benchmark Student:** Students who met or exceeded the benchmark score
 
 ---
 
-### Analysis
+## Analysis
 
-## ACT vs. SAT Performance by District
+### ACT vs. SAT Performance by District
 
 Between the ACT and SAT, the ACT had more districts with higher benchmark student percentages giving it more of a right-skew distribution, while the SAT held more of a symmetrical distribution with more districts concentrated in the middle percentiles.
 
@@ -83,7 +80,7 @@ In the ACT dataset, there were 353 districts represented and 29 (8.22%) of those
 
 Between the ACT and SAT datasets, there were 52 distinct districts and there was a heavier concentration of these worst-performing districts in 3 counties: Los Angeles, Fresno and Riverside. Respectively, they claim 11, 6, and 6 worst-performing districts, and together they make up 44.23% of the worst-performing districts.
 
-## ACT vs. SAT Performance by Subject
+### ACT vs. SAT Performance by Subject
 
 The ACT dataset provided each school's average score by subject, through which the state's average score by subject was determined, and are as follows: Reading(22), English(21), Math(21) and Science(21). The worst-performing schools' averages are: Reading(16), English(14), Math(16) and Science(16).
 
@@ -95,18 +92,18 @@ Based on these averages, Math is the subject that is giving students significant
 
 ---
 
-### Conclusion
+## Conclusion
 
-## Key Takeaways
+### Key Takeaways
 
 The State of California has 52 districts where less than 10% of students met or exceeded the benchmark score for the ACT and/or SAT. There is a heavy concentration of these districts in the Los Angeles, Fresno and Riverside counties.
 
 The ACT does not have a subject that can be considered worst-performing, but the SAT Math section is giving students significant difficulty.
 
-## Recommendations
+### Recommendations
 
 With 52 worst-performing districts (as defined in this analysis), the State of California has some significant academic improvements to consider. To start, focusing on the districts in the top 3 counties with the most amount of worst-performing districts (Los Angeles, Fresno and Riverside), will make the highest impact as they make up 44.23% of the worst-performing districts. These counties/districts will require a higher quality of instruction and delivery style with an emphasis on Math.
 
-## Next Steps
+### Next Steps
 
 A separate analysis will be beneficial to assess the current quality of instruction and delivery style at these worst-performing districts. This will be to determine what exactly needs to be implemented and/or changed so that the state can make an efficient use of its resources. 

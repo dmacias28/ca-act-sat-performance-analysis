@@ -1,16 +1,16 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 1: The State of California - ACT & SAT Performance Analysis
+## ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 1
 
----
+<h1 align="center">California ACT & SAT Performance Analysis</h1>
 
 ## Purpose
 
 ### Problem Statement
 
-In 2018-2019, the state of California had 76 high school districts and 344 unified school districts. This project aims to provide an overview of California's standardized test performance and identify the state’s worst-performing counties, districts and subjects. This will allow the state to better understand their academic performance and see where additional resources are required.
+In the 2018-19 school year, California had 76 high school districts and 344 unified school districts. This analysis aims to provide an overview of California's standardized test performance, and identify the state’s worst-performing counties, districts and subjects. This will allow the state to better understand their academic performance, and see where additional resources are required.
 
 ### Background
 
-The SAT and ACT are standardized tests that many colleges and universities in the United States require as part of their admissions process. The test scores are used along with other materials such as grade point average (GPA) and essay responses to determine whether or not the applicant will be granted admission.
+The SAT and ACT are standardized tests that many colleges and universities in the United States require as part of their admissions process. The test scores are used alongside grade point averages (GPA) and essay responses to determine whether or not the applicant will be granted admission.
 
 The ACT has four sections: English, Math, Reading, and Science, with an additional optional writing section. The composite benchmark score is 21.
 
@@ -26,59 +26,56 @@ As a result, higher education schools are beginning to drop the ACT/SAT requirem
 
 ### Datasets
 
-[`act_2019_ca.csv`](./data/act_2019_ca.csv): 2019 ACT Scores in California by School
-   * This dataset contains the average scores by test section (English, Reading, Math and Science) and the percentage of test taskers whose composite scores were greater or equal to 21 for the test administration year 2018-19. This information is according to school, for which  the district and county name are noted, if available.
+*2019 ACT Scores in California by School*
+* Contains the average scores by test section (English, Reading, Math and Science) and the percentage of participants whose composite scores were greater or equal to 21 for the test administration year 2018-19. This information is according to school, for which  the district and county name are noted, if available.
+* The original dataset contained 2,310 observations and 18 features. After removing schools with null values and columns without relevant information, the dataset was reduced to 1,367 rows and 13 features.
 
-[`sat_2019_ca.csv`](./data/sat_2019_ca.csv): 2019 SAT Scores in California by School
-   * This dataset contains the percent of students who met or exceeded the benchmark for Evidence-Based Reading & Writing and Math, both individually and together, the test administration year 2018-19. This information is according to school, for which  the district and county name are noted, if available.
+*2019 SAT Scores in California by School*
+   * Contains the percent of participants who met or exceeded the benchmark for Evidence-Based Reading & Writing and Math, both individually and together, the test administration year 2018-19. This information is according to school, for which  the district and county name are noted, if available.
+   * The original dataset contained 2,580 observations and 26 features. After removing schools with null values and columns without relevant information, the dataset was reduced to 1,667 rows and 13 features.
 
 ### Data Dictionary
 
 |**Feature**|**Type**|**Dataset**|**Description**|
 |---|---|---|---|
-|**county_district_school code**|*float*|ACT/SAT|The County/District/School code.| 
-|**county_code**|*float*|ACT/SAT|The county code.| 
-|**district_code**|*float*|ACT/SAT|The district code.| 
-|**school_code**|*float*|ACT/SAT|The district code.|
-|**record_type**|*object*|ACT/SAT|The record type: C=County, D=District, S=School, X=State| 
-|**district_name**|*object*|ACT/SAT|The district name.| 
-|**county_name**|*object*|ACT/SAT|The county name.| 
 |**school_name**|*object*|ACT/SAT|The school name.|
+|**district_name**|*object*|ACT/SAT|The district name.| 
+|**county_name**|*object*|ACT/SAT|The county name.|
 |**grade_12_enrollment**|*float*|ACT/SAT|The enrollment of grade 12.| 
-|**total_num_test_takers**|*float*|ACT/SAT|The number of test takers.| 
+|**total_num_test_takers**|*float*|ACT/SAT|The number of participants.| 
 |**avg_reading**|*float*|ACT|Average ACT Reading score.|
 |**avg_english**|*float*|ACT|Average ACT English score.|
 |**avg_math**|*float*|ACT|Average ACT Math score.|
 |**avg_science**|*float*|ACT|Average ACT Science score.|
-|**num_test_takers_21**|*float*|ACT|The number of test takers whose ACT Composite Scores are greater or equal to 21.| 
-|**pct_test_takers_21**|*float*|ACT| The percent of test takers whose ACT Composite Scores are greater or equal to 21.| 
-|**num_erw_benchmark**|*float*|SAT|The number of students who met or exceeded the benchmark for Evidence-Based Reading & Writing (ERW) test for Grade 12.
-|**pct_erw_benchmark**|*float*|SAT|The percent of students who met or exceeded the benchmark for Evidence-Based Reading & Writing (ERW) test for Grade 12.
-|**num_math_benchmark**|*float*|SAT|The number of students who met or exceeded the benchmark for the SAT Math test for Grade 12.
-|**pct_math_benchmark**|*float*|SAT|The percent of students who met or exceeded the benchmark for the SAT Math test for Grade 12.
-|**num_test_takers_benchmark**|*float*|SAT|The total number of students who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math Grade 12.| 
-|**pct_test_takers_benchmark**|*float*|SAT|The percent of students who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math Grade 12.| 
+|**num_test_takers_21**|*float*|ACT|The number of participants whose ACT Composite Scores are greater or equal to 21.| 
+|**pct_test_takers_21**|*float*|ACT| The percent of participants whose ACT Composite Scores are greater or equal to 21.| 
+|**num_erw_benchmark**|*float*|SAT|The number of participants who met or exceeded the benchmark for Evidence-Based Reading & Writing (ERW) test for Grade 12.
+|**pct_erw_benchmark**|*float*|SAT|The percent of participants who met or exceeded the benchmark for Evidence-Based Reading & Writing (ERW) test for Grade 12.
+|**num_math_benchmark**|*float*|SAT|The number of participants who met or exceeded the benchmark for the SAT Math test for Grade 12.
+|**pct_math_benchmark**|*float*|SAT|The percent of participants who met or exceeded the benchmark for the SAT Math test for Grade 12.
+|**num_test_takers_benchmark**|*float*|SAT|The total number of participants who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math Grade 12.| 
+|**pct_test_takers_benchmark**|*float*|SAT|The percent of participants who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math Grade 12.| 
 |**year**|*object*|ACT/SAT|The test administration year.| 
 
 ### Definitions
 
-   * **Overall:** All schools with recorded test data
+   * **Overall:** All schools with recorded test data.
 
-   * **Worst-Performing:** Schools where less than 10% of students met or exceeded the benchmark score
+   * **Worst-Performing:** Schools where less than 10% of participants met or exceeded the benchmark score.
 
-   * **Benchmark Student:** Students who met or exceeded the benchmark score
+   * **Benchmark Participant:** Participants who met or exceeded the benchmark score.
 
 ---
 
-## Analysis
+## Exploratory Data Analysis
 
 ### ACT vs. SAT Performance by District
 
-Between the ACT and SAT, the ACT had more districts with higher benchmark student percentages giving it more of a right-skew distribution, while the SAT held more of a symmetrical distribution with more districts concentrated in the middle percentiles.
+Between the ACT and SAT, the ACT had more districts with higher benchmark student percentages giving it more of a left-skewed distribution, while the SAT held more of a normal distribution with more districts concentrated in the middle percentiles.
 
-In the ACT dataset, there were 353 districts represented and 29 (8.22%) of those had schools with less than 10% benchmark students. In the SAT dataset, there were 406 districts represented and 38 (9.36%) of those had schools with less than 10% benchmark students.
+In the ACT dataset, there were 353 districts represented and 29 (8%) of those had schools with less than 10% benchmark participants. In the SAT dataset, there were 406 districts represented and 38 (9%) of those had schools with less than 10% benchmark participants.
 
-Between the ACT and SAT datasets, there were 52 distinct districts and there was a heavier concentration of these worst-performing districts in 3 counties: Los Angeles, Fresno and Riverside. Respectively, they claim 11, 6, and 6 worst-performing districts, and together they make up 44.23% of the worst-performing districts.
+Between the ACT and SAT datasets, there were 52 distinct districts and there was a heavier concentration of these worst-performing districts in 3 counties: Los Angeles, Fresno and Riverside. Respectively, they claim 11, 6, and 6 worst-performing districts, and together they make up 44% of the worst-performing districts.
 
 ### ACT vs. SAT Performance by Subject
 
@@ -86,23 +83,17 @@ The ACT dataset provided each school's average score by subject, through which t
 
 Based on these averages, there is no subject that can be considered worst-performing, either overall or at worst-performing schools.
 
-The SAT dataset provided each school's percent of students who met or exceeded the benchmark, through which the state's average percent of students who met or exceeded the benchmark was determined, and are as follows: Evidence-Based Reading & Writing (68%) and Math (46%). The worst-performing school's averages are: Evidence-Based Reading & Writing (27%) and Math (7%).
+The SAT dataset provided each school's percent of participants who met or exceeded the benchmark, through which the state's average percent of participants who met or exceeded the benchmark was determined, and are as follows: Evidence-Based Reading & Writing (68%) and Math (46%). The worst-performing school's averages are: Evidence-Based Reading & Writing (27%) and Math (7%).
 
-Based on these averages, Math is the subject that is giving students significant difficulty, both overall and at worst-performing schools.
+Based on these averages, Math is the subject that is giving participants much difficulty, both overall and at worst-performing schools.
 
 ---
 
 ## Conclusion
 
-### Key Takeaways
-
-The State of California has 52 districts where less than 10% of students met or exceeded the benchmark score for the ACT and/or SAT. There is a heavy concentration of these districts in the Los Angeles, Fresno and Riverside counties.
-
-The ACT does not have a subject that can be considered worst-performing, but the SAT Math section is giving students significant difficulty.
-
 ### Recommendations
 
-With 52 worst-performing districts, the State of California has some significant academic improvements to consider. To start, focusing on the districts in the top 3 counties with the most amount of worst-performing districts (Los Angeles, Fresno and Riverside), will have the highest impact as they make up 44.23% of the worst-performing districts. These counties/districts will require a higher quality of instruction and delivery style with an emphasis on Math.
+With 52 worst-performing districts, California has some academic improvements to consider. To start, focusing on the districts in the top 3 counties with the most number of worst-performing districts (Los Angeles, Fresno and Riverside), will have the highest impact as they make up 44% of the worst-performing districts. These counties/districts will require a higher quality of instruction and delivery style with an emphasis on Math.
 
 ### Next Steps
 
